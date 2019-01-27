@@ -8,10 +8,16 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 
 //reducers go here
-const feedbackStart = { feeling: null };
+const feedbackStart = { feeling: null, understanding: null, support: null, comments: null };
 const receivedFeedback = ( state = feedbackStart, action ) => {
     switch ( action.type ) {
         case 'RECEIVE_FEELING': 
+            return { ...state, ...action.payload }
+        case 'RECEIVE_UNDERSTANDING':
+            return { ...state, ...action.payload }
+        case 'RECEIVE_SUPPORT':
+            return { ...state, ...action.payload }
+        case 'RECEIVE_COMMENTS':
             return { ...state, ...action.payload }
 
         default:
