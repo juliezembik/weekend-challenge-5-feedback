@@ -9,7 +9,7 @@ class Support extends Component {
             <div className="container">
                 <div>
                     <h2>Do you feel supported today?</h2>
-                    <h5>Rate your feelings from 1-5. 1 for really bad, and 5 for excellent!</h5>
+                    <h5>Rate your support from 1-5. 1 for really bad, and 5 for excellent!</h5>
                     <TextField required type="number" className="input-three" />
                     <Button type="submit" variant="contained" color="primary" >Next</Button>
                 </div>

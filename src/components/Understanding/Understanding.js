@@ -9,8 +9,8 @@ class Understanding extends Component {
         return (
             <div className="container">
                 <div>
-                    <h2>How are you feeling today?</h2>
-                    <h5>Rate your feelings from 1-5. 1 for really bad, and 5 for excellent!</h5>
+                    <h2>Do you understand the content today?</h2>
+                    <h5>Rate your understanding from 1-5. 1 for really bad, and 5 for excellent!</h5>
                     <TextField required type="number" className="input-two" />
                     <Button type="submit" variant="contained" color="primary" >Next</Button>
                 </div>
