@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
 import { TextField } from '@material-ui/core';
 import { connect } from 'react-redux';
+import ReviewItem from './../Review/ReviewItem';
 
 class Support extends Component {
     constructor() {
@@ -37,6 +38,7 @@ class Support extends Component {
                     <h5>Rate your support from 1-5. 1 for really bad, and 5 for excellent!</h5>
                     <TextField required type="number" className="input-three" onChange={this.handleChangeState} />
                     <Button type="submit" variant="contained" color="primary" >Next</Button>
+                    <ReviewItem />
                 </form>
             </div>
         );

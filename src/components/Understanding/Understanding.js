@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
 import { TextField } from '@material-ui/core';
 import { connect } from 'react-redux';
+import ReviewItem from './../Review/ReviewItem'
 
 
 class Understanding extends Component {
@@ -38,6 +39,7 @@ class Understanding extends Component {
                     <h5>Rate your understanding from 1-5. 1 for really bad, and 5 for excellent!</h5>
                     <TextField required type="number" className="input-two" onChange={this.handleChangeState} />
                     <Button type="submit" variant="contained" color="primary" >Next</Button>
+                    <ReviewItem />
                 </form>
             </div>
         );
