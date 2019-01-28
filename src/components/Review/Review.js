@@ -9,16 +9,14 @@ class Review extends Component {
             <div className="container">
                 <div>
                     {JSON.stringify(this.props.reduxStore.receivedFeedback)}
-                    {this.props.reduxStore.receivedFeedback.map((review) => {
-                        return (
-                            <div>
-                                <p>Feeling: {review.feeling}</p>
-                                <p>Understanding: {review.understanding}</p>
-                                <p>Support: {review.support}</p>
-                                <p>Comments: {review.comments}</p>
-                            </div>
-                        )
-                    })}
+                    <h3>Let's review your feedback!</h3>
+                            <ul>
+                                <li>Feeling: {this.props.reduxStore.receivedFeedback.feeling}</li>
+                                <li>Understanding: {this.props.reduxStore.receivedFeedback.understanding}</li>
+                                <li>Support: {this.props.reduxStore.receivedFeedback.support}</li>
+                                <li>Comments: {this.props.reduxStore.receivedFeedback.comments}</li>
+                            </ul>
+
                 </div>
             </div>
 
